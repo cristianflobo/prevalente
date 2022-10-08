@@ -1,23 +1,24 @@
 import React from 'react'
 import { cv, empleo, engranaje, flecha, foto, logo1, lupa } from '../../image'
 import './navbar.css'
+//import {Card} from '../Index'
 
 export const Navbar = () => {
   return (
     <div className='navbarconteiner'>
         <div className='navbar'>
-            <div style={{height:"100%", display:"flex"}}>
-                <div style={{display:"flex", alignItems:"center", marginLeft:51}}>
+            <div style={{width:"40%", display:"flex"}}>
+                <div style={{width:"50%", display:"flex", alignItems:"center",justifyContent:"center"}}>
                     <img src={logo1} alt=""  style={{height:60}}/>
                     <span style={{fontFamily:"Roboto", fontStyle:"normal", fontSize:"16px", color:"white"}}>Gente prevalente</span>
                 </div>
-                <div>
+                <div style={{width:"50%", display:"flex", alignItems:"center"}}>
                     <img src={lupa} alt="" />    
                     <input style={{height:20, alignItems:"center", backgroundColor:"#2F3337", border:"none"}} type="text" placeholder='Buscar' />
                 </div>
             </div>
-            <div style={{height:"100%", display:"flex"}}>
-            <div style={{display:"flex", alignItems:"center", height:'1000%'}}>
+            <div style={{width:"58%", display:"flex", justifyContent:"space-between"}}>
+            <div style={{display:"flex", alignItems:"center"}}>
                 <img src={engranaje} alt="" />    
                 <span style={{ fontSize:"16px", color:"white"}}>Administracion</span>
             </div>
@@ -37,6 +38,7 @@ export const Navbar = () => {
             </div>
             </div>
         </div>
+        
     </div>
   )
 }

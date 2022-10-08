@@ -1,0 +1,12 @@
+.homeconteiner{
+
+    width: 100%;
+    min-height: 100vh;
+    background-color:#E5E7EB;
+}
+.conteinercard{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}

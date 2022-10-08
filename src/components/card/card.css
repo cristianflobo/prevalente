@@ -1,0 +1,10 @@
+.cardconteiner{
+    background-color:#E5E7EB;
+    width: 552px;
+    height: 330px;
+    padding: 25px;
+}
+.carddiv{
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
