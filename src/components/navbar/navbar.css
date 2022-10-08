@@ -1,0 +1,13 @@
+.navbarconteiner{
+   flex: 1;
+   font-family: "roboto";
+   font-style: normal;
+   
+}
+.navbar{
+    flex: 1;
+    height: 60px;
+    background-color:#2F3337 ;
+    display: flex;
+    align-items: center;
+}
