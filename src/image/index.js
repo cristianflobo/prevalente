@@ -11,6 +11,13 @@ import recta2 from "../image/recta2.png"
 import recta3 from "../image/recta3.png"
 import recta4 from "../image/recta4.png"
 import reloj from "../image/reloj.png"
+import logo_negro from "../image/logo_negro.png"
+import check from "../image/check.png"
+import x from "../image/x.png"
+import clip from "../image/clip.png"
+import flecha_izquierda from "../image/flecha_izquierda.png"
+import flecha_derecha from "../image/flecha_derecha.png"
+
 
 export{
     logo1,
@@ -26,4 +33,10 @@ export{
     recta3,
     recta4,
     reloj,
+    logo_negro,
+    check,
+    x,
+    clip,
+    flecha_derecha,
+    flecha_izquierda,
 }

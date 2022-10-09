@@ -5,8 +5,31 @@
     background-color:#E5E7EB;
 }
 .conteinercard{
+    padding: 60px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+.fatherform{
+    padding: 99px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.textadministrador{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    font-size:24px ;
+    color: #26B4FF;
+
+    width: 700px;
+    height: 28px;
+    left: 51px;
+    top: 106px;
+}
+.textparrafo{
+    font-size:24px ;
+    color: black;
 }

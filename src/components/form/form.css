@@ -1,0 +1,83 @@
+.conteinerform{
+    
+    width: 942px;
+    height: 734px;
+    background-color:  #FFFFFF;
+    border-radius: 8px;
+    margin-top: 50px;
+}
+.logo_negro{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(243, 243, 243) ;
+}
+.divlogo_negro{
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    width: 100%;
+}
+.testoinput{
+    color: #727171;
+    font-size: 14px;
+}
+.inputform{
+    border: none;
+    border-bottom: 0.5px solid #A7A7A7 ;
+    width: 345px;
+
+}
+.divform{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    
+    display: flex;
+    align-items: center;
+    width: 228px;
+    height: 60px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 18px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    border: none;
+}
+.divbuttoncheck{
+    position: absolute;
+    right: 21%;  
+    top: 40%;  
+    
+}
+.buttoncheck{
+    display: flex;
+    align-items: center;
+    width: 223px;
+    height: 47px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 18px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    border: none;
+}
+.paginacion{
+    display: flex;
+    height: 20px;
+    align-items: center;
+    position: absolute;
+    left: 35%;
+    top: 150%;
+    /* bottom: 0.1%; */
+}

@@ -1,52 +1,28 @@
-import React from 'react'
-import { recta1, recta11, recta2, recta3, recta4 } from '../../image'
+import React, { useState } from 'react'
+import { datacard } from '../../utils/datacard'
 import { Card } from '../card'
+import { Form } from '../form'
 import { Navbar } from '../navbar/Index'
 import './home.css'
 
 export  const Home = () => {
-  const datacard = [
-    {
-      title:"Solicitudes de creación de empresas",
-      image1:recta1,
-      image2:recta11,
-      text:"2 solicitudes sin tratar",
-    },
-    {
-      title:"Indicadores",
-      image1:recta1,
-      image2:recta2,
-      text:"Visitado por última vez: 31/01/2020",
-    },
-    {
-      title:"Inscripción de empleados en empresas",
-      image1:recta1,
-      image2:recta3,
-      text:"3 usuarios sin empresa registrada",
-    },
-    {
-      title:"Gestión de usuarios",
-      image1:recta1,
-      image2:recta4,
-      text:"532 usuarios activos en la plataforma",
-    },
-  ]
+  const [stateForm, setstateForm] = useState(0)
+  const titleform = datacard.find(item=> item.id === stateForm)
+  console.log(stateForm)
+
   return (
     <div className='homeconteiner'>
       <Navbar/>
+
+      {
+        stateForm === 1?<div className='fatherform'>
+          <p className='textadministrador'>Administrador/ <p className='textparrafo'>{`${titleform.title}`}</p></p>  <Form/></div>:
+        <div className='conteinercard' >
+          { datacard.map(item =><Card data = {item} stateCard = {setstateForm} />) }
+        </div>
+      }
       
-      <div className='conteinercard' >
-        
-        {
-          datacard.map(item =>{
-            return(
-               <Card data = {item} />
-        
-            )
-          })
-        }
       
-      </div>
     </div>
   )
 }
