@@ -17,6 +17,9 @@ import x from "../image/x.png"
 import clip from "../image/clip.png"
 import flecha_izquierda from "../image/flecha_izquierda.png"
 import flecha_derecha from "../image/flecha_derecha.png"
+import pdf from "../image/pdf.png"
+import buttonrespon from "../image/buttonrespon.png"
+
 
 
 export{
@@ -39,4 +42,7 @@ export{
     clip,
     flecha_derecha,
     flecha_izquierda,
+    pdf,
+    buttonrespon,
+
 }

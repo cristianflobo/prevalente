@@ -1,0 +1,13 @@
+.fatherpdf{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 50px;
+}
+.divpdfimg{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    column-gap: 150px;
+}

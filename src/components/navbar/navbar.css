@@ -11,3 +11,52 @@
     display: flex;
     align-items: center;
 }
+.divimgspan{
+    display: flex;
+    align-items: center;
+}
+.inputnavbar{
+    height: 20px;
+    align-items: center ;
+    background-color: #2F3337;
+    border: none;
+    font-size: 16px;
+}
+
+.divmenu{
+    width: 58%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.divinputnavbar{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.divlogo{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.divloboparrafo{
+    width: 40%;
+    display: flex;
+    font-size: 16px;
+}
+
+@media (max-width:600px) {
+    .divmenu{
+        display: none;
+    }
+    .divinputnavbar{
+        display: none;
+    }
+    .divlogo{
+        width: 300px;
+    }
+    .divloboparrafo{
+        width: 50%;
+    }
+}
