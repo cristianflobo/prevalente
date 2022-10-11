@@ -9,21 +9,22 @@ import './home.css'
 export  const Home = () => {
   const [stateForm, setstateForm] = useState(0)
   const [viewModal, setviewModal] = useState(false)
+  const [nameEmpresa, setnameEmpresa] = useState("")
   const titleform = datacard.find(item=> item.id === stateForm)
-  console.log(stateForm)
+  console.log("-----home----- ",nameEmpresa)
 
   return (
     <div className='homeconteiner'>
       <Navbar/>
       {
         stateForm === 1?<div className='fatherform'>
-          <p className='textadministrador'>Administrador/ <p className='textparrafo'>{`${titleform.title}`}</p></p> <Form modal = {setviewModal}/></div>:
+          <p className='textadministrador'>Administrador/ <p className='textparrafo'>{`${titleform.title}`}</p></p> <Form nameempresa = {setnameEmpresa} modal = {setviewModal}/></div>:
         <div className='conteinercard' >
           { datacard.map(item =><Card data = {item} stateCard = {setstateForm} />) }
         </div>
       }
       {
-        viewModal?<Modal modal = {setviewModal} />:null
+        viewModal?<Modal nameModalEmpresa = {nameEmpresa} modal = {setviewModal} />:null
       }
       
     </div>

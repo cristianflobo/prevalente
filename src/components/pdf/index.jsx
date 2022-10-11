@@ -2,28 +2,28 @@ import React from 'react'
 import { pdf } from '../../image'
 import './pdf.css'
 
-export const Pdf = () => {
+export const Pdf = ({nameEmpresa}) => {
   return (
     <div className='fatherpdf'>
         <div className='divpdfimg'>
-            <a  href="apple.png" download="apple">RUT PrevlalentWare</a>
-            <img style={{height:"40px", width:"30px"}} src={pdf} alt="" />
+            <a style={{width:"250px", textDecoration:"none", color:"black"}} href="apple.png" download={"RUT " + nameEmpresa}>RUT {nameEmpresa}</a>
+            <img className='imgpdf' src={pdf} alt="" />
          </div>
          <div className='divpdfimg'>
-            <a  href="apple.png" download="apple">RUT PrevlalentWare</a>
-            <img style={{height:"40px", width:"30px"}} src={pdf} alt="" />
+            <a style={{width:"250px",textDecoration:"none", color:"black"}} href="apple.png" download={"Logo " + nameEmpresa}>Logo {nameEmpresa}</a>
+            <img className='imgpdf' src={pdf} alt="" />
          </div>
          <div className='divpdfimg'>
-            <a  href="apple.png" download="apple">RUT PrevlalentWare</a>
-            <img style={{height:"40px", width:"30px"}} src={pdf} alt="" />
+            <a style={{width:"250px",textDecoration:"none", color:"black"}} href="apple.png" download={"Acta de constitución" + nameEmpresa}>Acta de constitución {nameEmpresa}</a>
+            <img className='imgpdf' src={pdf} alt="" />
          </div>
          <div className='divpdfimg'>
-            <a  href="apple.png" download="apple">RUT PrevlalentWare</a>
-            <img style={{height:"40px", width:"30px"}} src={pdf} alt="" />
+            <a style={{width:"250px", textDecoration:"none", color:"black"}} href="apple.png" download={"Cámara de Comercio" + nameEmpresa}>Cámara de Comercio {nameEmpresa}</a>
+            <img className='imgpdf' src={pdf} alt="" />
          </div>
          <div className='divpdfimg'>
-            <a  href="apple.png" download="apple">RUT PrevlalentWare</a>
-            <img style={{height:"40px", width:"30px"}} src={pdf} alt="" />
+            <a style={{width:"250px", textDecoration:"none", color:"black"}} href="apple.png" download={"Otro Document " + nameEmpresa}>Otro Document {nameEmpresa}</a>
+            <img className='imgpdf' src={pdf} alt="" />
          </div>
     </div>
   )

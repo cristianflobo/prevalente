@@ -3,11 +3,25 @@
     height: 100%;
     flex-direction: column;
     justify-content: center;
-    row-gap: 50px;
+    row-gap: 30px;
+    
 }
 .divpdfimg{
     justify-content: center;
     display: flex;
     align-items: center;
-    column-gap: 150px;
+    column-gap: 80px;
+    text-align: start;
+    font-size: 24px;
+    
+}
+.imgpdf{
+    width:30px ;
+    height: 40px;
+}
+
+@media (max-width:600px) { 
+    .imgpdf{
+        width: 19px;
+    }
 }

@@ -33,3 +33,17 @@
     font-size:24px ;
     color: black;
 }
+@media (max-width:600px) { 
+   .textadministrador{
+    position: absolute;
+    left: 22px;
+    display: flex;
+    width: 320px;
+    height: 28px;
+    font-size: 14px;
+   }
+   .textparrafo{
+    font-size: 14px;
+   }
+  
+}
