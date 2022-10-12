@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { check, clip, flecha_derecha, flecha_izquierda, logo_negro, x } from '../../image'
+import { check, clip, flecha_derecha_gris, flecha_derecha_negra, flecha_izquierda_gris, flecha_izquierda_negra, logo_negro, x } from '../../image'
 import './form.css'
 import useForm from '../../hooks/useForm'
+import { Modal } from '../modal'
+import { Pdf } from '../pdf'
 
 
 export const Form = ({modal, nameempresa}) => {
@@ -49,11 +51,19 @@ export const Form = ({modal, nameempresa}) => {
                     <button className='button' onClick={() => viewModal()}><img style={{marginRight:"10px"}} src={clip} alt="" />Ver archivos adjuntos</button>
                 </div>
             </div>
+            {
+                window.screen.width < 600 ? 
+                <div>
+                    <p style={{fontFamily:"roboto", fontWeight:"700", fontSize:"18px", marginTop:"50px", marginRight:"90px"}}>Documentos cargados</p>
+                    <Pdf nameEmpresa ={dataView.name}/>
+                </div> 
+                :null
+            }
         </div>
         <div className='paginacion'>
-            <img style={{height:"38px"}} src={flecha_izquierda} alt="" onClick={() => viewBack(contadorEmpresa - 1)} />
+            <img style={{height:"38px"}} src={contadorEmpresa + 1 == 1?flecha_izquierda_gris:flecha_izquierda_negra } alt="" onClick={() => viewBack(contadorEmpresa - 1)} />
             <p className='spanpaginacion' >Empresa {contadorEmpresa + 1 } de { dataempresa.length - aprobada } pendiente por aprobación</p>
-            <img style={{height:"38px"}} src={flecha_derecha} alt="" onClick={() => viewNext(contadorEmpresa + 1)} />
+            <img style={{height:"38px"}} src={contadorEmpresa + 1 >= 1 && dataempresa.length !== contadorEmpresa + 1?flecha_derecha_negra:flecha_derecha_gris } alt="" onClick={() => viewNext(contadorEmpresa + 1)} />
         </div>
     </div>
   )

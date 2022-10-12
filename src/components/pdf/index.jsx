@@ -6,23 +6,23 @@ export const Pdf = ({nameEmpresa}) => {
   return (
     <div className='fatherpdf'>
         <div className='divpdfimg'>
-            <a style={{width:"250px", textDecoration:"none", color:"black"}} href="apple.png" download={"RUT " + nameEmpresa}>RUT {nameEmpresa}</a>
+            <a className='atextpdf'  href="apple.png" download={"RUT " + nameEmpresa}>RUT {nameEmpresa}</a>
             <img className='imgpdf' src={pdf} alt="" />
          </div>
          <div className='divpdfimg'>
-            <a style={{width:"250px",textDecoration:"none", color:"black"}} href="apple.png" download={"Logo " + nameEmpresa}>Logo {nameEmpresa}</a>
+            <a className='atextpdf' href="apple.png" download={"Logo " + nameEmpresa}>Logo {nameEmpresa}</a>
             <img className='imgpdf' src={pdf} alt="" />
          </div>
          <div className='divpdfimg'>
-            <a style={{width:"250px",textDecoration:"none", color:"black"}} href="apple.png" download={"Acta de constitución" + nameEmpresa}>Acta de constitución {nameEmpresa}</a>
+            <a className='atextpdf' href="apple.png" download={"Acta de constitución" + nameEmpresa}>Acta de constitución {nameEmpresa}</a>
             <img className='imgpdf' src={pdf} alt="" />
          </div>
          <div className='divpdfimg'>
-            <a style={{width:"250px", textDecoration:"none", color:"black"}} href="apple.png" download={"Cámara de Comercio" + nameEmpresa}>Cámara de Comercio {nameEmpresa}</a>
+            <a className='atextpdf' href="apple.png" download={"Cámara de Comercio" + nameEmpresa}>Cámara de Comercio {nameEmpresa}</a>
             <img className='imgpdf' src={pdf} alt="" />
          </div>
          <div className='divpdfimg'>
-            <a style={{width:"250px", textDecoration:"none", color:"black"}} href="apple.png" download={"Otro Document " + nameEmpresa}>Otro Document {nameEmpresa}</a>
+            <a className='atextpdf' href="apple.png" download={"Otro Document " + nameEmpresa}>Otro Document {nameEmpresa}</a>
             <img className='imgpdf' src={pdf} alt="" />
          </div>
     </div>

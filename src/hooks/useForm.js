@@ -1,29 +1,30 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import axios from "axios"
 let data = []
-//let contadorEmpresa = 0
 
 const useForm = (modal, nameempresa) => {
-    let conta = 0
     const [dataempresa, setdataempresa] = useState([])
     const [aprobada, setaprobada] = useState([])
     const [dataView, setdataView] = useState([])
     const [contadorEmpresa, setcontadorEmpresa] = useState(0)
+
     useEffect(() => {
         getEmpresas() 
     }, [])
+
     const getEmpresas = async() =>{
         const empresas = await axios.get("/empresa")
-        console.log("first" , empresas.data)
         data = empresas
         setdataempresa(empresas.data)
         setdataView(empresas.data[contadorEmpresa])
         nameempresa(empresas.data[contadorEmpresa].name)
-        empresasAprobada()
+       // empresasAprobada()
      }
+
     const viewModal = ()=>{
         modal(true)
     }
+
     const viewBack = (position) => {
         if (0 !== contadorEmpresa ) {
             setcontadorEmpresa(contadorEmpresa - 1 )
@@ -37,15 +38,12 @@ const useForm = (modal, nameempresa) => {
             setcontadorEmpresa(contadorEmpresa + 1 )
             setdataView(dataempresa[position])
             nameempresa(dataempresa[position].name)
-            console.log("dataempresa[contadorEmpresa]",dataempresa[contadorEmpresa])
-            console.log(contadorEmpresa)
         }
     } 
     
     const empresasAprobada = useMemo( ()=>{
         let contadorAprobar = 0
         dataempresa.map(item => {
-            console.log(item.aprobada)
             if (item.aprobada === true) {    
                 ++contadorAprobar
             }
@@ -66,8 +64,7 @@ const useForm = (modal, nameempresa) => {
             }
         } catch (error) {
             console.log(error)
-        }
-        
+        }  
     }
 
    

@@ -19,9 +19,28 @@
     width:30px ;
     height: 40px;
 }
+.atextpdf{
+    width: 250px;
+    text-decoration: none;
+    color: black;
+}
 
-@media (max-width:600px) { 
+@media (max-width:667px) { 
     .imgpdf{
-        width: 19px;
+        width: 40px;
     }
+    .fatherpdf{
+       width: 100%;
+    }
+    .divpdfimg{
+        column-gap: 0px;
+        font-size: 18px;
+    }
+    .atextpdf{
+        width: 200px;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 400;
+    }
+  
 }

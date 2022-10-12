@@ -15,14 +15,20 @@ import logo_negro from "../image/logo_negro.png"
 import check from "../image/check.png"
 import x from "../image/x.png"
 import clip from "../image/clip.png"
-import flecha_izquierda from "../image/flecha_izquierda.png"
-import flecha_derecha from "../image/flecha_derecha.png"
+import flecha_izquierda_gris from "../image/flecha_izquierda_gris.png"
+import flecha_derecha_gris from "../image/flecha_derecha_gris.png"
+import flecha_izquierda_negra from "../image/flecha_izquierda_negra.png"
+import flecha_derecha_negra from "../image/flecha_derecha_negra.png"
 import pdf from "../image/pdf.png"
 import buttonrespon from "../image/buttonrespon.png"
 
 
 
 export{
+    flecha_derecha_gris,
+    flecha_derecha_negra,
+    flecha_izquierda_gris,
+    flecha_izquierda_negra,
     logo1,
     lupa,
     engranaje,
@@ -40,8 +46,6 @@ export{
     check,
     x,
     clip,
-    flecha_derecha,
-    flecha_izquierda,
     pdf,
     buttonrespon,
 

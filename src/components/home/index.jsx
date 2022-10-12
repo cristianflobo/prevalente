@@ -11,7 +11,6 @@ export  const Home = () => {
   const [viewModal, setviewModal] = useState(false)
   const [nameEmpresa, setnameEmpresa] = useState("")
   const titleform = datacard.find(item=> item.id === stateForm)
-  console.log("-----home----- ",nameEmpresa)
 
   return (
     <div className='homeconteiner'>
