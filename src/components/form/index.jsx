@@ -17,9 +17,13 @@ export const Form = ({modal, nameempresa}) => {
                 <button className='buttoncheck' disabled = {dataView.aprobada} onClick={()=> aprobar(true)} style={{marginBottom:"26px"}}> <img style={{marginRight:"10px"}} src={check} alt="" />Aprobar Empresa</button>
                 <button className='buttoncheck' disabled = {!dataView.aprobada} onClick={()=> aprobar(false)} > <img style={{marginRight:"10px"}} src={x} alt="" />Rechazar Empresa</button>
             </div>
-            <div className='logo_negro'>
-                <img style={{width:"174px", height:"151px"}} src={logo_negro} alt="" />
+            
+            <div className='padrelogo_negro'>
+                <div className='logo_negro'>
+                    <img style={{width:"174px", height:"151px"}} src={logo_negro} alt="" />
+                </div>
             </div>
+            <div style={{width:"33.33%"}}></div>
         </div>
         <div className='divform'>
             <div className='divformtextinput'>
