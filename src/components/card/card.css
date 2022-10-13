@@ -1,103 +1,99 @@
-.cardconteiner{ 
-    background-color:#E5E7EB;
-    width: 552px;
-    height: 330px;
-    padding: 30px;
+.cardconteiner {
+  background-color: #e5e7eb;
+  width: 552px;
+  height: 330px;
+  padding: 30px;
 }
-.carddiv{
-    background-color: #FFFFFF;
-    border-radius: 16px;
-    width: 552px;
-    height: 330px;
+.carddiv {
+  background-color: #ffffff;
+  border-radius: 16px;
+  width: 552px;
+  height: 330px;
 }
-.divimagenescard{
-    height: 100px;
-    position: relative;
-    top: -40px;
-    left: 30px;
+.divimagenescard {
+  height: 100px;
+  position: relative;
+  top: -40px;
+  left: 30px;
 }
-.img2{
-    /* style={{position:"absolute", zIndex:1,bottom:"18px",left:"24px"}} */
-    position: absolute;
-    z-index: 1;
+.img2 {
+  position: absolute;
+  z-index: 1;
+  bottom: 18px;
+  left: 24px;
+}
+.img1 {
+  position: absolute;
+}
+.titleparrafo {
+  margin-left: 27px;
+  font-size: 36px;
+}
+.divconteinertext {
+  width: 552px;
+  height: 70px;
+  border-top: 1px solid;
+  display: flex;
+  align-items: center;
+  margin-top: 27px;
+  color: #9a9a9a;
+}
+.divtitleparrafo {
+  height: 94px;
+  width: 450px;
+}
+.parrafotext {
+  width: 170px;
+  height: 28px;
+}
+
+@media (max-width: 600px) {
+  .cardconteiner {
+    width: 345px;
+    height: 250px;
+  }
+  .carddiv {
+    width: 345px;
+    height: 200px;
+  }
+  .divtitleparrafo {
+    height: 40px;
+    width: 345px;
+  }
+  .parrafotex {
+    width: 119px;
+    height: 14px;
+  }
+  .img2 {
+    width: 40px;
+    height: 35px;
     bottom: 18px;
-    left: 24px;
-}
-.img1{
-    position: absolute;
-}
-.titleparrafo{
-    /* style={{marginLeft:20, fontSize:"36px"}} */
-    margin-left: 27px;
-    font-size: 36px;
-}
-.divconteinertext{
-    width: 552px;
-    height: 70px;
+    left: 13px;
+  }
+  .img1 {
+    width: 62px;
+    height: 67px;
+  }
+
+  .divimagenescard {
+    height: 62px;
+    top: -20px;
+  }
+  .titleparrafo {
+    font-size: 24px;
+  }
+  .divconteinertext {
+    width: 345px;
+    height: 50px;
     border-top: 1px solid;
     display: flex;
     align-items: center;
     margin-top: 27px;
-    color: #9A9A9A;
-}
-.divtitleparrafo{
-    height: 94px;
-    width: 450px;
-
-}
-.parrafotext{
-    width: 170px;
-    height: 28px;
-}
-
-@media (max-width:600px) {
-    .cardconteiner{
-        width: 345px;
-        height: 250px;
-    }
-    .carddiv{
-        width: 345px;
-        height: 200px;
-    }
-    .divtitleparrafo{
-        height: 40px;
-        width: 345px;
-    }
-    .parrafotex{
-        
-        width: 119px;
-        height: 14px;
-    }
-    .img2{
-        width: 40px;
-        height: 35px;
-        bottom: 18px;
-        left: 13px;
-    }
-    .img1{
-        width: 62px;
-        height: 67px;
-    }
-    
-    .divimagenescard {
-        height: 62px;
-        top: -20px;
-    }
-    .titleparrafo{
-        font-size: 24px;
-    }
-    .divconteinertext{
-        width: 345px;
-        height: 50px;
-        border-top: 1px solid;
-        display: flex;
-        align-items: center;
-        margin-top: 27px;
-    }
-    .parrafotext{
-        font-size: 12px;
-        width: 192px;
-        display: flex;
-        align-items: center;
-    }
+  }
+  .parrafotext {
+    font-size: 12px;
+    width: 192px;
+    display: flex;
+    align-items: center;
+  }
 }
